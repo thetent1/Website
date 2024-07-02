@@ -54,7 +54,7 @@ main {
 }
 
 footer {
-   /* background-color: rgba(58, 58, 85, 0.8); */
+    background-color: rgba(58, 58, 85, 0.8); 
     padding: 10px;
     position: fixed;
     width: 100%;
