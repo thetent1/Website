@@ -62,8 +62,8 @@ nav ul li a:hover {
     padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Added background color for contrast */
+    align-items: flex-start; /* Aligns content at the top */
+    flex-direction: column;
 }
 
 /* Main content styles */
@@ -73,6 +73,7 @@ main {
     max-width: 800px;
     width: 100%;
     padding: 20px;
+    margin: 20px auto; /* Centers the main content */
 }
 
 /* Footer styles */
