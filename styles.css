@@ -57,8 +57,9 @@ nav ul li a:hover {
 /* Content wrapper styles */
 .content-wrapper {
     flex: 1;
-    background: url('images/retrocity3.png') no-repeat center center;
-    background-size: contain; /* Ensures the entire image is shown */
+    background: url('images/retrocity3.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the entire image is shown, covering the area */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Aligns content at the top */
