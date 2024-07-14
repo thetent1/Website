@@ -8,12 +8,20 @@ body {
     padding: 0;
     margin: 0;
     font-size: 16px;
+    min-height: 100vh; /* Ensures body takes full viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header styles */
 header {
     background-color: rgba(58, 58, 85, 0.8);
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Makes header stick to the top */
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -50,21 +58,21 @@ nav ul li a:hover {
 
 /* Main content styles */
 main {
-    padding: 100px 20px; /* Adjusted padding for header */
+    padding: 80px 20px; /* Adjusted padding to account for fixed header */
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    margin: 50px auto;
+    margin: 20px auto;
     max-width: 800px;
+    flex: 1; /* Allows the main content to expand and push footer to the bottom */
 }
 
 /* Footer styles */
 footer {
     background-color: rgba(58, 58, 85, 0.8);
     padding: 10px;
-    position: relative;
     width: 100%;
-    bottom: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Pixel Art Styles */
@@ -112,5 +120,4 @@ nav ul li a:hover {
         margin: 20px;
     }
 }
-
 
