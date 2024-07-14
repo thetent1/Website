@@ -54,16 +54,23 @@ nav ul li a:hover {
     color: #3a3a55;
 }
 
-/* Main content styles */
-main {
+/* Content wrapper styles */
+.content-wrapper {
+    flex: 1;
     background: url('images/retrocity3.png') no-repeat center center fixed;
     background-size: cover;
-    flex: 1; /* Allows the main content to expand and push footer to the bottom */
-    padding: 80px 20px; /* Adjusted padding for header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    margin: 50px auto;
     max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.5); /* Added background color for contrast */
+    margin: 20px;
 }
 
 /* Footer styles */
@@ -71,8 +78,6 @@ footer {
     background-color: #3a3a55;
     padding: 10px;
     width: 100%;
-    position: relative;
-    bottom: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -118,8 +123,7 @@ nav ul li a:hover {
     }
 
     main {
-        padding: 80px 20px; /* Adjusted padding for smaller screens */
-        margin: 20px;
+        padding: 20px;
     }
 }
 
