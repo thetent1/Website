@@ -13,8 +13,8 @@ body {
 /* Header styles */
 header {
     background-color: rgba(58, 58, 85, 0.8);
-    padding: 20px;
-    position: relative;
+    padding: 10px;
+    position: fixed;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
