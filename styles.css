@@ -1,27 +1,25 @@
 /* Base styles */
 body {
     font-family: 'Press Start 2P', cursive;
-    background: url('images/retrocity3.png') no-repeat center center fixed;
-    background-size: cover;
     color: #fff;
     text-align: center;
     padding: 0;
     margin: 0;
     font-size: 16px;
-    min-height: 100vh; /* Ensures body takes full viewport height */
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full viewport height */
 }
 
 /* Header styles */
 header {
-    background-color: rgba(58, 58, 85, 0.8);
+    background-color: #3a3a55;
     padding: 20px;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky; /* Makes header stick to the top */
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -58,19 +56,23 @@ nav ul li a:hover {
 
 /* Main content styles */
 main {
-    padding: 80px 20px; /* Adjusted padding to account for fixed header */
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
+    background: url('images/retrocity3.png') no-repeat center center fixed;
+    background-size: cover;
     flex: 1; /* Allows the main content to expand and push footer to the bottom */
+    padding: 80px 20px; /* Adjusted padding for header */
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5); /* Added background color for contrast */
 }
 
 /* Footer styles */
 footer {
-    background-color: rgba(58, 58, 85, 0.8);
+    background-color: #3a3a55;
     padding: 10px;
     width: 100%;
+    position: relative;
+    bottom: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
